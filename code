@@ -1,0 +1,22 @@
+def checker(list, num):
+    if num in list:
+        print("The number is in the list")
+    else:
+        print("The number is not in the list")
+            
+
+list = []
+
+if __name__=="__main__":
+    print("Enter below numbers for the list:")
+
+    while True:
+        user_input=int(input(">>"))
+        if user_input == -99:
+            break
+        else:
+            list.append(user_input)
+
+    print("Now enter the number to be checked below")
+    number=int(input(">>"))
+    checker(list,number)
